@@ -1,0 +1,32 @@
+title: Rob Wildgoose
+email: contact@robertwildgoose.co.uk
+description: >-
+  Senior Mobile App Developer experienced in building and scaling iOS and Android applications for major brands across retail and fitness.
+  I’m passionate about creative engineering and AI Enablement, exploring practical ways to improve software, workflows, and team delivery.
+baseurl: ""
+url: "https://robwildgoose.github.io"
+github_username: robwildgoose
+
+markdown: kramdown
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+  privacy:
+    output: true
+    permalink: /privacy/:name/
+  terms:
+    output: true
+    permalink: /terms/:name/
+  experience:
+    output: false
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+      banner: "/assets/images/home-banner-image.jpg"
+      banner_alt: "Photo by Lukasz Szmigiel on Unsplash"

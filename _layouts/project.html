@@ -1,0 +1,68 @@
+---
+layout: default
+---
+
+<article class="project-page row justify-content-center">
+  <div class="col-12 col-lg-10 col-xl-8">
+    <a href="{{ '/#projects' | relative_url }}" class="back-link">← Back to projects</a>
+
+    <header class="project-header">
+      <div class="project-meta-top">
+        {% if page.status %}
+          <span class="status-badge status-{{ page.status | slugify }}">{{ page.status }}</span>
+        {% endif %}
+        {% if page.project_type %}
+          <span class="meta-tag">{{ page.project_type }}</span>
+        {% endif %}
+        {% if page.company %}
+          <span class="meta-tag">{{ page.company }}</span>
+        {% endif %}
+        {% for platform in page.platforms %}
+          <span class="meta-tag">{{ platform }}</span>
+        {% endfor %}
+      </div>
+
+      <h1>{{ page.title }}</h1>
+      {% if page.summary %}
+        <p class="project-summary">{{ page.summary }}</p>
+      {% endif %}
+
+      {% if page.tech %}
+        <div class="tech-list">
+          {% for item in page.tech %}
+            <span class="tech-tag">{{ item }}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+    </header>
+
+    {% if page.screenshot %}
+      <img class="project-screenshot img-fluid rounded" src="{{ page.screenshot | relative_url }}" alt="{{ page.screenshot_alt | default: page.title | escape }}">
+    {% endif %}
+
+    <div class="project-body">
+      {{ content }}
+    </div>
+
+    {% assign privacy_url = page.privacy_url | default: "" | strip %}
+    {% assign terms_url = page.terms_url | default: "" | strip %}
+    {% if privacy_url != "" or terms_url != "" %}
+      <div class="project-policy-pills" aria-label="Legal documents">
+        {% if privacy_url != "" %}
+          {% assign first_character = privacy_url | slice: 0, 1 %}
+          {% if first_character == "/" or privacy_url contains "https://" or privacy_url contains "http://" %}
+            <a class="project-policy-pill" href="{{ privacy_url | relative_url }}">Privacy Policy</a>
+          {% endif %}
+        {% endif %}
+
+        {% if terms_url != "" %}
+          {% assign first_character = terms_url | slice: 0, 1 %}
+          {% if first_character == "/" or terms_url contains "https://" or terms_url contains "http://" %}
+            <a class="project-policy-pill" href="{{ terms_url | relative_url }}">Terms and Conditions</a>
+          {% endif %}
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</article>
