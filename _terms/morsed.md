@@ -1,8 +1,8 @@
 ---
 title: Morsed Terms and Conditions
 layout: default
-banner: "/assets/images/project-banner.svg"
-banner_alt: "Abstract mobile application project banner"
+banner: "/assets/images/home-banner-image.jpg"
+banner_alt: "Photo by Lukasz Szmigiel on Unsplash"
 ---
 
 **Terms & Conditions**  

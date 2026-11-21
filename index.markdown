@@ -1,7 +1,7 @@
 ---
 layout: default
 banner: "/assets/images/home-banner-image.jpg"
-banner_alt: "Abstract mobile application development banner"
+banner_alt: "Photo by Lukasz Szmigiel on Unsplash"
 ---
 
 <section class="hero row">
