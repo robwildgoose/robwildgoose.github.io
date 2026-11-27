@@ -41,22 +41,22 @@ Even though SLAPP! has now been retired, it served its purpose well: helping peo
 ### App Store Screenshots
 
 <div class="row g-3 project-gallery" aria-label="SLAPP App Store screenshots">
-  <div class="col-6">
+  <div class="col-2">
     <img class="img-fluid rounded" src="/assets/images/slapp/screen-0.webp" alt="SLAPP screenshot 1">
   </div>
-  <div class="col-6">
+  <div class="col-2">
     <img class="img-fluid rounded" src="/assets/images/slapp/screen-1.webp" alt="SLAPP screenshot 2">
   </div>
-  <div class="col-6">
+  <div class="col-2">
     <img class="img-fluid rounded" src="/assets/images/slapp/screen-2.webp" alt="SLAPP screenshot 3">
   </div>
-  <div class="col-6">
+  <div class="col-2">
     <img class="img-fluid rounded" src="/assets/images/slapp/screen-3.webp" alt="SLAPP screenshot 4">
   </div>
-  <div class="col-6">
+  <div class="col-2">
     <img class="img-fluid rounded" src="/assets/images/slapp/screen-4.webp" alt="SLAPP screenshot 5">
   </div>
-  <div class="col-6">
+  <div class="col-2">
     <img class="img-fluid rounded" src="/assets/images/slapp/screen-5.webp" alt="SLAPP screenshot 6">
   </div>
 </div>
